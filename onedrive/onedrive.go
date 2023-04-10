@@ -59,7 +59,7 @@ func NewClient(httpClient *http.Client) *Client {
 
 	c.common.client = c
 
-	c.UserService = (*UserService)(&c.common)
+	c.User = (*UserService)(&c.common)
 	c.Drives = (*DrivesService)(&c.common)
 	c.DriveItems = (*DriveItemsService)(&c.common)
 	c.DriveSearch = (*DriveSearchService)(&c.common)
